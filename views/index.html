@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bitcoin Tracker</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Bitcoin tracker">
+<meta name="keywords" content="bitcoin">
+<meta name="author" content="Juuso Äikäs">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>Bitcoin Tracker</h1>
+
+	<form id="form">
+		<fieldset>
+			<legend><strong>Select a date range and your preferred data</strong></legend>
+			<label class="lblDatepicker" for="dpBearishStart" title="Click to select start date">Start:</label>
+			<input type="date" id="dpBearishStart" name="start" min="2009-01-03" title="Click to select start date"><br>
+			<label class="lblDatepicker" for="dpBearishEnd" title="Click to select end date">End:</label>
+			<input type="date" id="dpBearishEnd" name="end" min="2009-01-03" title="Click to select end date"><br><br>
+			<input type="radio" id="btnBearish" name="pick" checked="true">
+			<label for="btnBearish">Longest bearish trend</label><br>
+			<input type="radio" id="btnVolume" name="pick">
+			<label for="btnVolume">Day with highest trading volume</label><br>
+			<input type="radio" id="btnBuyAndSell" name="pick">
+			<label for="btnBuyAndSell">Best date to buy and sell</label><br><br>
+			<input type="submit" value="Get data">
+			<label id="alert"></label>
+		</fieldset>
+	</form>
+	<br>
+
+	<div id="answer">The answer will appear here.</div>
+	<br><br><br>
+
+	<footer>Powered by CoinGecko</footer>
+
+<script src="eventListeners.js"></script>
+</body>
+</html>
