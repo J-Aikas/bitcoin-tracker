@@ -4,6 +4,7 @@
   "description": "A node.js web app powered by CoinGecko API. Shows you the longest bearish trend, highest trading volume and best day to buy and sell in the chosen date span.",
   "main": "main.js",
   "scripts": {
+    "start": "node ./main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Juuso Äikäs",
