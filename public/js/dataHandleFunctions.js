@@ -1,6 +1,6 @@
 'use strict;'
 const dayInMilliseconds = 60 * 60 * 24 * 1000,
-answerDiv = document.getElementById('answer');
+	answerDiv = document.getElementById('answer');
 
 // Longest bearish trend
 export function handleBearishResponse(data, queryDateFrom) {
@@ -34,7 +34,7 @@ export function handleVolumeResponse(data, queryDateFrom) {
 	}
 	const highestVolumeDateString = dateToUTCString(highestVolumeDate);
 	answerDiv.innerHTML = 'Date with the highest trading volume: ' + highestVolumeDateString 
-	+ '. Volume: ' + highestVolume + ' €.';
+	+ '. Volume: ' + Math.round(highestVolume) + ' €.';
 }
 
 // Best day to buy and sell
